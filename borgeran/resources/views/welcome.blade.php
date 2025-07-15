@@ -18,8 +18,8 @@
                 </div>
                 <nav class="nav-menu">
                     <ul>
-                        <li><a href="#" class="nav-link active">Home</a></li>
-                        <li><a href="#" class="nav-link">Menu</a></li>
+                        <li><a href="/" class="nav-link active">Home</a></li>
+                        <li><a href="{{ url('menu') }}" class="nav-link">Menu</a></li>
                         <li><a href="#" class="nav-link">Restaurants</a></li>
                         <li><a href="#" class="nav-link">Contact Us</a></li>
                     </ul>
@@ -221,8 +221,8 @@
                     <div class="footer-column">
                         <h4>QUICKLINKS</h4>
                         <ul>
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">Menu</a></li>
+                            <li><a href="/">Home</a></li>
+                            <li><a href="{{ url('menu') }}">Menu</a></li>
                             <li><a href="#">Restaurants</a></li>
                         </ul>
                     </div>
