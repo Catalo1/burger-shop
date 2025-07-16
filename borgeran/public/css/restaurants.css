@@ -1,0 +1,248 @@
+/* Restaurants Page Styles */
+.restaurants-page {
+    background-color: #f8f8f8;
+    min-height: 100vh;
+    padding: 20px 0;
+}
+
+.breadcrumb {
+    margin-bottom: 20px;
+}
+
+.back-link {
+    display: inline-flex;
+    align-items: center;
+    color: #e67e22;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.back-link:hover {
+    color: #d35400;
+}
+
+.back-icon {
+    margin-right: 8px;
+    font-size: 18px;
+}
+
+.page-title {
+    font-size: 48px;
+    font-weight: 700;
+    color: #e67e22;
+    margin-bottom: 30px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.restaurant-card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.restaurant-image {
+    flex: 1;
+    min-width: 300px;
+    height: 300px;
+    overflow: hidden;
+}
+
+.restaurant-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.restaurant-info {
+    flex: 1;
+    min-width: 300px;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(135deg, #f8f8f8 0%, #e8e8e8 100%);
+}
+
+.restaurant-details h2 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #333;
+    line-height: 1.4;
+    margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.restaurant-details p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.6;
+    font-family: 'Poppins', sans-serif;
+}
+
+.location-section {
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.location-title {
+    font-size: 32px;
+    font-weight: 700;
+    color: #e67e22;
+    margin-bottom: 30px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.location-details {
+    display: grid;
+    gap: 30px;
+}
+
+.address {
+    font-size: 18px;
+    color: #333;
+    font-family: 'Poppins', sans-serif;
+}
+
+.contact-info {
+    display: grid;
+    gap: 10px;
+}
+
+.contact-info p {
+    font-size: 16px;
+    color: #555;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.hours-info {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.hours-column h4 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 10px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.hours-column p {
+    font-size: 16px;
+    color: #666;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.services h4 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 15px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.services-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.services-list li {
+    background: #e67e22;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+}
+
+.delivery-partners {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.partner-logo {
+    height: 50px;
+    width: auto;
+    object-fit: contain;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .restaurants-page {
+        padding: 10px 0;
+    }
+    
+    .page-title {
+        font-size: 36px;
+        margin-bottom: 20px;
+    }
+    
+    .restaurant-card {
+        flex-direction: column;
+        margin-bottom: 30px;
+    }
+    
+    .restaurant-image {
+        height: 250px;
+    }
+    
+    .restaurant-info {
+        padding: 30px 20px;
+    }
+    
+    .restaurant-details h2 {
+        font-size: 20px;
+    }
+    
+    .location-section {
+        padding: 30px 20px;
+    }
+    
+    .location-title {
+        font-size: 28px;
+    }
+    
+    .hours-info {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .services-list {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+@media (max-width: 480px) {
+    .page-title {
+        font-size: 28px;
+    }
+    
+    .restaurant-details h2 {
+        font-size: 18px;
+    }
+    
+    .location-title {
+        font-size: 24px;
+    }
+    
+    .location-section {
+        padding: 20px 15px;
+    }
+}

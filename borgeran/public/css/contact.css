@@ -1,0 +1,198 @@
+/* Contact Page Styles */
+.contact-page {
+    background-color: #f8f8f8;
+    min-height: 100vh;
+    padding: 20px 0;
+}
+
+.breadcrumb {
+    margin-bottom: 20px;
+}
+
+.back-link {
+    display: inline-flex;
+    align-items: center;
+    color: #e67e22;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.back-link:hover {
+    color: #d35400;
+}
+
+.back-icon {
+    margin-right: 8px;
+    font-size: 18px;
+}
+
+.page-title {
+    font-size: 48px;
+    font-weight: 700;
+    color: #e67e22;
+    margin-bottom: 30px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.contact-details-card {
+    background: linear-gradient(135deg, #e69651 0%, #e78747 100%);
+    padding: 40px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.contact-card-title {
+    font-size: 32px;
+    font-weight: 700;
+    color: #000;
+    margin-bottom: 25px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.contact-info {
+    color: #000;
+}
+
+.contact-description {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.email-contact {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.email-icon {
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+.email-address {
+    font-weight: 500;
+}
+
+.privacy-notice {
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.privacy-notice strong {
+    font-weight: 600;
+}
+
+.foodpanda-contact {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+}
+
+.foodpanda-text {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.foodpanda-link {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.foodpanda-logo {
+    height: 40px;
+    width: auto;
+    object-fit: contain;
+}
+
+.foodpanda-email {
+    font-size: 16px;
+    font-weight: 500;
+    color: #333;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contact-page {
+        padding: 10px 0;
+    }
+    
+    .page-title {
+        font-size: 36px;
+        margin-bottom: 20px;
+    }
+    
+    .contact-details-card {
+        padding: 30px 20px;
+        margin-bottom: 20px;
+    }
+    
+    .contact-card-title {
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+    
+    .contact-description {
+        font-size: 15px;
+    }
+    
+    .email-contact {
+        font-size: 15px;
+    }
+    
+    .foodpanda-contact {
+        padding: 25px 20px;
+    }
+    
+    .foodpanda-text {
+        font-size: 15px;
+    }
+    
+    .foodpanda-link {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    
+    .foodpanda-logo {
+        height: 35px;
+    }
+}
+
+@media (max-width: 480px) {
+    .page-title {
+        font-size: 28px;
+    }
+    
+    .contact-card-title {
+        font-size: 24px;
+    }
+    
+    .contact-details-card {
+        padding: 25px 15px;
+    }
+    
+    .foodpanda-contact {
+        padding: 20px 15px;
+    }
+    
+    .contact-description,
+    .email-contact,
+    .foodpanda-text {
+        font-size: 14px;
+    }
+}

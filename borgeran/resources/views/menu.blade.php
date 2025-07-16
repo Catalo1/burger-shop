@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Borgeran - Menu</title>
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/menu.css') }}">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -20,7 +21,7 @@
                     <ul>
                         <li><a href="/" class="nav-link">Home</a></li>
                         <li><a href="/menu" class="nav-link active">Menu</a></li>
-                        <li><a href="#" class="nav-link">Restaurants</a></li>
+                        <li><a href="/restaurants" class="nav-link">Restaurants</a></li>
                         <li><a href="#" class="nav-link">Contact Us</a></li>
                     </ul>
                 </nav>
@@ -155,32 +156,32 @@
                         <div class="menu-items-grid">
                             <div class="menu-item">
                                 <div class="item-image">
-                                    <img src="{{ asset('images/6pc-nuggets.png') }}" alt="6 pc Nuggets">
+                                    <img src="{{ asset('images/4pc-nuggets.png') }}" alt="4-pc Nuggets">
                                 </div>
                                 <div class="item-details">
-                                    <h3>6 pc Nuggets</h3>
-                                    <p>Six pieces of crispy chicken nuggets served with your choice of dipping sauce.</p>
+                                    <h3>4-pc Nuggets</h3>
+                                    <p>Four pieces of crispy chicken nuggets served with your choice of dipping sauce.</p>
                                     <div class="item-price">₱ 149</div>
                                     <div class="item-actions">
-                                        <button class="btn-decrease" onclick="decreaseQuantity('6pc-nuggets')">-</button>
-                                        <span class="quantity" id="6pc-nuggets-qty">0</span>
-                                        <button class="btn-increase" onclick="increaseQuantity('6pc-nuggets', '6 pc Nuggets', 149)">+</button>
+                                        <button class="btn-decrease" onclick="decreaseQuantity('4pc-nuggets')">-</button>
+                                        <span class="quantity" id="4pc-nuggets-qty">0</span>
+                                        <button class="btn-increase" onclick="increaseQuantity('4pc-nuggets', '4-pc Nuggets', 149)">+</button>
                                     </div>
                                 </div>
                             </div>
 
                             <div class="menu-item">
                                 <div class="item-image">
-                                    <img src="{{ asset('images/8pc-nuggets.png') }}" alt="8 pc Nuggets">
+                                    <img src="{{ asset('images/6pc-nuggets.png') }}" alt="6-pc Nuggets">
                                 </div>
                                 <div class="item-details">
-                                    <h3>8 pc Nuggets</h3>
-                                    <p>Eight pieces of golden crispy chicken nuggets with dipping sauce.</p>
+                                    <h3>6-pc Nuggets</h3>
+                                    <p>Six pieces of golden crispy chicken nuggets with dipping sauce.</p>
                                     <div class="item-price">₱ 199</div>
                                     <div class="item-actions">
-                                        <button class="btn-decrease" onclick="decreaseQuantity('8pc-nuggets')">-</button>
-                                        <span class="quantity" id="8pc-nuggets-qty">0</span>
-                                        <button class="btn-increase" onclick="increaseQuantity('8pc-nuggets', '8 pc Nuggets', 199)">+</button>
+                                        <button class="btn-decrease" onclick="decreaseQuantity('6pc-nuggets')">-</button>
+                                        <span class="quantity" id="6pc-nuggets-qty">0</span>
+                                        <button class="btn-increase" onclick="increaseQuantity('6pc-nuggets', '6-pc Nuggets', 199)">+</button>
                                     </div>
                                 </div>
                             </div>
@@ -323,16 +324,16 @@
 
                             <div class="menu-item">
                                 <div class="item-image">
-                                    <img src="{{ asset('images/mango-sundae.png') }}" alt="Mango Sundae">
+                                    <img src="{{ asset('images/kitkat-sundae.png') }}" alt="Kit Kat Sundae">
                                 </div>
                                 <div class="item-details">
-                                    <h3>Mango Sundae</h3>
-                                    <p>Creamy vanilla ice cream with fresh mango chunks and mango sauce.</p>
+                                    <h3>Kit Kat Sundae</h3>
+                                    <p>Creamy soft-serve ice cream topped with pieces of Kit Kat Chocolate.</p>
                                     <div class="item-price">₱ 119</div>
                                     <div class="item-actions">
-                                        <button class="btn-decrease" onclick="decreaseQuantity('mango-sundae')">-</button>
-                                        <span class="quantity" id="mango-sundae-qty">0</span>
-                                        <button class="btn-increase" onclick="increaseQuantity('mango-sundae', 'Mango Sundae', 119)">+</button>
+                                        <button class="btn-decrease" onclick="decreaseQuantity('kitkat-sundae')">-</button>
+                                        <span class="quantity" id="kitkat-sundae-qty">0</span>
+                                        <button class="btn-increase" onclick="increaseQuantity('kitkat-sundae', 'Kit Kat Sundae', 119)">+</button>
                                     </div>
                                 </div>
                             </div>

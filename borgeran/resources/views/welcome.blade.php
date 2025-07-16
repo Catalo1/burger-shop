@@ -20,8 +20,8 @@
                     <ul>
                         <li><a href="/" class="nav-link active">Home</a></li>
                         <li><a href="{{ url('menu') }}" class="nav-link">Menu</a></li>
-                        <li><a href="#" class="nav-link">Restaurants</a></li>
-                        <li><a href="#" class="nav-link">Contact Us</a></li>
+                        <li><a href="{{ url('restaurants') }}" class="nav-link">Restaurants</a></li>
+                        <li><a href="{{ url('contact') }}" class="nav-link">Contact Us</a></li>
                     </ul>
                 </nav>
                 <div class="auth-buttons">
@@ -42,7 +42,7 @@
                         Welcome to our culinary Sanctuary, where every dish tells 
                         every bite is an adventure at our food
                     </p>
-                    <button class="btn-order">Order Now</button>
+                    <button class="btn-order" onclick="window.location.href='{{ url('menu') }}'">Order Now</button>
                 </div>
                 <div class="hero-image">
                     <img src="{{ asset('images/burger-hero.png') }}" alt="Classic Cheese Burger">
@@ -86,11 +86,11 @@
     <section class="order-section">
         <div class="container">
             <div class="order-buttons">
-                <button class="btn-order-now">
+                <button class="btn-order-now" onclick="window.location.href='{{ url('menu') }}'">
                     <span class="icon">🛒</span>
                     Order Now
                 </button>
-                <button class="btn-order-history">
+                <button class="btn-order-history" id="orderHistoryBtn" style="display:none;">
                     <span class="icon">📋</span>
                     Order History
                 </button>
@@ -111,28 +111,28 @@
                         <img src="{{ asset('images/classic-cheese-burger.png') }}" alt="Classic Cheese Burger">
                     </div>
                     <h3>Classic Cheese Burger</h3>
-                    <button class="btn-order-item">Order Now</button>
+                    <button class="btn-order-item" onclick="window.location.href='{{ url('menu') }}'">Order Now</button>
                 </div>
                 <div class="food-card">
                     <div class="food-image">
                         <img src="{{ asset('images/chicken-nuggets.png') }}" alt="Chicken Nuggets">
                     </div>
                     <h3>Chicken Nuggets</h3>
-                    <button class="btn-order-item">Order Now</button>
+                    <button class="btn-order-item" onclick="window.location.href='{{ url('menu') }}'">Order Now</button>
                 </div>
                 <div class="food-card">
                     <div class="food-image">
                         <img src="{{ asset('images/fries.png') }}" alt="Fries">
                     </div>
                     <h3>Fries</h3>
-                    <button class="btn-order-item">Order Now</button>
+                    <button class="btn-order-item" onclick="window.location.href='{{ url('menu') }}'">Order Now</button>
                 </div>
                 <div class="food-card">
                     <div class="food-image">
                         <img src="{{ asset('images/chocolate-sundae.png') }}" alt="Chocolate Sundae">
                     </div>
                     <h3>Chocolate Sundae</h3>
-                    <button class="btn-order-item">Order Now</button>
+                    <button class="btn-order-item" onclick="window.location.href='{{ url('menu') }}'">Order Now</button>
                 </div>
             </div>
         </div>
@@ -177,7 +177,7 @@
                     <span class="order-icon">💻</span>
                     <span class="order-text">Order Online</span>
                 </div>
-                <button class="btn-order-online">Order Now</button>
+                <button class="btn-order-online" onclick="window.location.href='{{ url('menu') }}'">Order Now</button>
             </div>
         </div>
     </section>
@@ -228,7 +228,7 @@
                     </div>
                     <div class="footer-column">
                         <h4>ORDER ONLINE</h4>
-                        <button class="btn-footer-order">Order Now</button>
+                        <button class="btn-footer-order" onclick="window.location.href='{{ url('menu') }}'">Order Now</button>
                     </div>
                 </div>
             </div>
@@ -237,5 +237,13 @@
             </div>
         </div>
     </footer>
+    <script>
+        // Show Order History button if user has ordered before (simulate with localStorage)
+        document.addEventListener('DOMContentLoaded', function() {
+            if (localStorage.getItem('hasOrdered') === 'true') {
+                document.getElementById('orderHistoryBtn').style.display = 'inline-flex';
+            }
+        });
+    </script>
 </body>
 </html>
