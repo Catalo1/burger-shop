@@ -25,8 +25,17 @@
                         <li><a href="{{ url('contact') }}" class="nav-link active">Contact Us</a></li>
                     </ul>
                 </nav>
+                
                 <div class="auth-buttons">
-                    <a href="#" class="btn-auth">Login/Sign Up</a>
+                     @auth
+                        <span>Welcome, {{ Auth::user()->name }}!</span>
+                        <form method="POST" action="{{ route('logout') }}" style="display: inline;">
+                            @csrf
+                            <button type="submit" class="btn-auth">Logout</button>
+                        </form>
+                    @else
+                        <a href="{{ route('login') }}" class="btn-auth">Login/Sign up</a>
+                    @endauth
                 </div>
             </div>
         </div>
